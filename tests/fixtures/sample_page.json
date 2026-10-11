@@ -1,0 +1,72 @@
+{
+  "_note": "Synthetic fixture in the shape of the appreviews endpoint response. Not real review data; replace with a committed real sample for evidence.",
+  "success": 1,
+  "query_summary": {"num_reviews": 4},
+  "cursor": "AoJwnextcursor==",
+  "reviews": [
+    {
+      "recommendationid": "1001",
+      "author": {"steamid": "0", "num_games_owned": 120, "num_reviews": 5, "playtime_forever": 1200, "playtime_at_review": 600},
+      "language": "english",
+      "review": "Great combat and a story that kept me hooked. Runs smoothly.",
+      "timestamp_created": 1758000000,
+      "timestamp_updated": 1758000000,
+      "voted_up": true,
+      "votes_up": 10,
+      "votes_funny": 1,
+      "weighted_vote_score": "0.612345",
+      "comment_count": 0,
+      "steam_purchase": true,
+      "received_for_free": false,
+      "written_during_early_access": false
+    },
+    {
+      "recommendationid": "1002",
+      "author": {"steamid": "0", "num_games_owned": 30, "num_reviews": 1, "playtime_forever": 90, "playtime_at_review": 90},
+      "language": "english",
+      "review": "Crashes every 20 minutes and it is overpriced.",
+      "timestamp_created": 1758100000,
+      "timestamp_updated": 1758200000,
+      "voted_up": false,
+      "votes_up": 3,
+      "votes_funny": 0,
+      "weighted_vote_score": "0.5",
+      "comment_count": 2,
+      "steam_purchase": true,
+      "received_for_free": false,
+      "written_during_early_access": true
+    },
+    {
+      "recommendationid": "1002",
+      "author": {"steamid": "0", "num_games_owned": 30, "num_reviews": 1, "playtime_forever": 90, "playtime_at_review": 90},
+      "language": "english",
+      "review": "Crashes every 20 minutes and it is overpriced.",
+      "timestamp_created": 1758100000,
+      "timestamp_updated": 1758200000,
+      "voted_up": false,
+      "votes_up": 3,
+      "votes_funny": 0,
+      "weighted_vote_score": "0.5",
+      "comment_count": 2,
+      "steam_purchase": true,
+      "received_for_free": false,
+      "written_during_early_access": true
+    },
+    {
+      "recommendationid": "1003",
+      "author": {"steamid": "0", "num_games_owned": 5, "num_reviews": 2, "playtime_forever": 30, "playtime_at_review": 30},
+      "language": "english",
+      "review": "   ",
+      "timestamp_created": 1757900000,
+      "timestamp_updated": 1757900000,
+      "voted_up": true,
+      "votes_up": 0,
+      "votes_funny": 0,
+      "weighted_vote_score": "0",
+      "comment_count": 0,
+      "steam_purchase": false,
+      "received_for_free": true,
+      "written_during_early_access": false
+    }
+  ]
+}
