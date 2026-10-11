@@ -1,0 +1,31 @@
+{
+  "n_compared": 30,
+  "sentiment_accuracy": 0.567,
+  "sentiment_confusion": {
+    "positive": {
+      "positive": 5,
+      "negative": 0,
+      "mixed": 10
+    },
+    "negative": {
+      "positive": 1,
+      "negative": 1,
+      "mixed": 1
+    },
+    "mixed": {
+      "positive": 1,
+      "negative": 0,
+      "mixed": 11
+    }
+  },
+  "themes": {
+    "praise": {
+      "precision": null,
+      "recall": 0.0
+    },
+    "complaints": {
+      "precision": null,
+      "recall": 0.0
+    }
+  }
+}

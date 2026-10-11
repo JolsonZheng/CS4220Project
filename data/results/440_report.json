@@ -1,0 +1,47 @@
+{
+  "game_id": 440,
+  "review_statistics": {
+    "n_reviews": 200,
+    "pct_positive": 92.5,
+    "median_playtime_at_review_h": 62.55499999999999,
+    "median_review_length": 25,
+    "first_review": "2026-10-09T09:01:47+00:00",
+    "last_review": "2026-10-11T14:04:47+00:00"
+  },
+  "insights": {
+    "reviews_analyzed": 200,
+    "sentiment_counts": {
+      "positive": 57,
+      "negative": 6,
+      "mixed": 137
+    },
+    "top_praise": {
+      "performance": 5,
+      "difficulty": 3,
+      "multiplayer": 1,
+      "gameplay": 1,
+      "monetization": 1,
+      "developer_support": 1,
+      "content_length": 1
+    },
+    "top_complaints": {
+      "bugs": 1
+    },
+    "agreement_with_steam": {
+      "n_reviews": 200,
+      "n_label_errors": 0,
+      "n_mixed": 137,
+      "polar_agreement": 0.889
+    },
+    "disagreement_ids": [
+      "237322325",
+      "237342213",
+      "237365715",
+      "237392334",
+      "237395068",
+      "237434807",
+      "237439294"
+    ],
+    "note": "Keyword baseline; theme polarity is approximate, not validated AI classification."
+  }
+}

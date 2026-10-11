@@ -12,6 +12,8 @@ import pandas as pd
 
 from .prompts import SENTIMENTS, THEMES
 
+import ast
+
 
 def agreement_with_thumbs(reviews: pd.DataFrame, labels: pd.DataFrame) -> dict:
     """How often the model's polar sentiment matches the reviewer's own recommend / not-recommend.
@@ -31,11 +33,30 @@ def agreement_with_thumbs(reviews: pd.DataFrame, labels: pd.DataFrame) -> dict:
 
 
 def _split_themes(value) -> set[str]:
+    """Convert theme labels into a set."""
+
     if isinstance(value, (list, tuple, set)):
         return {t for t in value if t in THEMES}
+
     if not isinstance(value, str) or not value.strip():
         return set()
-    return {t.strip() for t in value.split(";") if t.strip() in THEMES}
+
+    # Handle lists saved as strings in CSV files
+    if value.strip().startswith("["):
+        try:
+            parsed = ast.literal_eval(value)
+            if isinstance(parsed, (list, tuple, set)):
+                return {t for t in parsed if t in THEMES}
+        except (ValueError, SyntaxError):
+            return set()
+
+    # Handle themes separated by semicolons
+    return {
+        t.strip()
+        for t in value.split(";")
+        if t.strip() in THEMES
+    }
+
 
 
 def agreement_with_manual(labels: pd.DataFrame, manual_csv: Path) -> dict:
