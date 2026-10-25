@@ -1,0 +1,286 @@
+{
+  "n_common": 30,
+  "summary": {
+    "keyword_baseline_v1": {
+      "sentiment_accuracy": 0.567,
+      "sentiment_coverage": 0.267,
+      "praise_recall": 0.0,
+      "complaints_recall": 0.0
+    },
+    "keyword_baseline_v2": {
+      "sentiment_accuracy": 0.733,
+      "sentiment_coverage": 0.6,
+      "praise_recall": 0.5,
+      "complaints_recall": 0.625
+    }
+  },
+  "methods": {
+    "keyword_baseline_v1": {
+      "n_compared": 30,
+      "label_sources": {
+        "unspecified": 30
+      },
+      "true_sentiment_counts": {
+        "positive": 15,
+        "negative": 3,
+        "mixed": 12
+      },
+      "sentiment_accuracy": 0.567,
+      "sentiment_coverage": 0.267,
+      "polar_accuracy": 0.75,
+      "sentiment_confusion": {
+        "positive": {
+          "positive": 5,
+          "negative": 0,
+          "mixed": 10
+        },
+        "negative": {
+          "positive": 1,
+          "negative": 1,
+          "mixed": 1
+        },
+        "mixed": {
+          "positive": 1,
+          "negative": 0,
+          "mixed": 11
+        }
+      },
+      "n_disagreements": 13,
+      "disagreements": [
+        {
+          "recommendation_id": "237364069",
+          "true": "positive",
+          "pred": "mixed"
+        },
+        {
+          "recommendation_id": "237289167",
+          "true": "negative",
+          "pred": "mixed"
+        },
+        {
+          "recommendation_id": "237312899",
+          "true": "positive",
+          "pred": "mixed"
+        },
+        {
+          "recommendation_id": "237386806",
+          "true": "positive",
+          "pred": "mixed"
+        },
+        {
+          "recommendation_id": "237433373",
+          "true": "positive",
+          "pred": "mixed"
+        },
+        {
+          "recommendation_id": "237434807",
+          "true": "negative",
+          "pred": "positive"
+        },
+        {
+          "recommendation_id": "237448782",
+          "true": "mixed",
+          "pred": "positive"
+        },
+        {
+          "recommendation_id": "237346012",
+          "true": "positive",
+          "pred": "mixed"
+        },
+        {
+          "recommendation_id": "237353197",
+          "true": "positive",
+          "pred": "mixed"
+        },
+        {
+          "recommendation_id": "237395300",
+          "true": "positive",
+          "pred": "mixed"
+        },
+        {
+          "recommendation_id": "237290066",
+          "true": "positive",
+          "pred": "mixed"
+        },
+        {
+          "recommendation_id": "237415556",
+          "true": "positive",
+          "pred": "mixed"
+        },
+        {
+          "recommendation_id": "237354291",
+          "true": "positive",
+          "pred": "mixed"
+        }
+      ],
+      "themes": {
+        "praise": {
+          "precision": null,
+          "recall": 0.0,
+          "support": 2
+        },
+        "complaints": {
+          "precision": null,
+          "recall": 0.0,
+          "support": 8
+        },
+        "mentions": {
+          "precision": 0.25,
+          "recall": 0.1,
+          "support": 10
+        }
+      },
+      "per_theme": {
+        "gameplay": {
+          "precision": null,
+          "recall": 0.0,
+          "support": 2
+        },
+        "price_value": {
+          "precision": null,
+          "recall": 0.0,
+          "support": 1
+        },
+        "multiplayer": {
+          "precision": null,
+          "recall": 0.0,
+          "support": 4
+        },
+        "difficulty": {
+          "precision": null,
+          "recall": 0.0,
+          "support": 1
+        },
+        "developer_support": {
+          "precision": null,
+          "recall": 0.0,
+          "support": 2
+        }
+      }
+    },
+    "keyword_baseline_v2": {
+      "n_compared": 30,
+      "label_sources": {
+        "unspecified": 30
+      },
+      "true_sentiment_counts": {
+        "positive": 15,
+        "negative": 3,
+        "mixed": 12
+      },
+      "sentiment_accuracy": 0.733,
+      "sentiment_coverage": 0.6,
+      "polar_accuracy": 0.722,
+      "sentiment_confusion": {
+        "positive": {
+          "positive": 11,
+          "negative": 2,
+          "mixed": 2
+        },
+        "negative": {
+          "positive": 0,
+          "negative": 2,
+          "mixed": 1
+        },
+        "mixed": {
+          "positive": 1,
+          "negative": 2,
+          "mixed": 9
+        }
+      },
+      "n_disagreements": 8,
+      "disagreements": [
+        {
+          "recommendation_id": "237364069",
+          "true": "positive",
+          "pred": "mixed"
+        },
+        {
+          "recommendation_id": "237289167",
+          "true": "negative",
+          "pred": "mixed"
+        },
+        {
+          "recommendation_id": "237312899",
+          "true": "positive",
+          "pred": "negative"
+        },
+        {
+          "recommendation_id": "237430837",
+          "true": "mixed",
+          "pred": "negative"
+        },
+        {
+          "recommendation_id": "237340269",
+          "true": "mixed",
+          "pred": "positive"
+        },
+        {
+          "recommendation_id": "237395300",
+          "true": "positive",
+          "pred": "mixed"
+        },
+        {
+          "recommendation_id": "237290066",
+          "true": "positive",
+          "pred": "negative"
+        },
+        {
+          "recommendation_id": "237338409",
+          "true": "mixed",
+          "pred": "negative"
+        }
+      ],
+      "themes": {
+        "praise": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "support": 2
+        },
+        "complaints": {
+          "precision": 0.625,
+          "recall": 0.625,
+          "support": 8
+        },
+        "mentions": {
+          "precision": 0.538,
+          "recall": 0.7,
+          "support": 10
+        }
+      },
+      "per_theme": {
+        "gameplay": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "support": 2
+        },
+        "price_value": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 1
+        },
+        "content_length": {
+          "precision": 0.0,
+          "recall": null,
+          "support": 0
+        },
+        "multiplayer": {
+          "precision": 0.667,
+          "recall": 0.5,
+          "support": 4
+        },
+        "difficulty": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 1
+        },
+        "developer_support": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "support": 2
+        }
+      }
+    }
+  },
+  "manual_file": "data/manual/440_manual.csv"
+}

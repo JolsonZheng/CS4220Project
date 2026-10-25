@@ -133,9 +133,17 @@ def main(argv: Optional[list[str]] = None) -> None:
     ap.add_argument("--max-reviews", type=int, default=500)
     ap.add_argument("--language", default="english")
     ap.add_argument("--raw-dir", type=Path, default=DEFAULT_RAW_DIR)
+    ap.add_argument(
+        "--review-type", choices=["all", "positive", "negative"], default="all",
+        help="negative-only pulls are used to balance the manual evaluation set; "
+             "save them to a separate --raw-dir (e.g. data/raw_negative) so pages are not overwritten",
+    )
     args = ap.parse_args(argv)
 
-    pages = iter_pages(args.appid, max_reviews=args.max_reviews, language=args.language)
+    pages = iter_pages(
+        args.appid, max_reviews=args.max_reviews, language=args.language,
+        review_type=args.review_type,
+    )
     paths = save_pages(args.appid, pages, raw_dir=args.raw_dir)
     print(f"wrote {len(paths)} page(s) to {Path(args.raw_dir) / str(args.appid)}")
 

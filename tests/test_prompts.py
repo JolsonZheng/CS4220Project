@@ -78,4 +78,4 @@ def test_agreement_with_manual(tmp_path):
     assert m["n_compared"] == 3
     assert m["sentiment_accuracy"] == round(2 / 3, 3)
     assert m["sentiment_confusion"]["negative"]["mixed"] == 1
-    assert m["themes"]["complaints"] == {"precision": 1.0, "recall": round(2 / 3, 3)}
+    assert m["themes"]["complaints"] == {"precision": 1.0, "recall": round(2 / 3, 3), "support": 3}
